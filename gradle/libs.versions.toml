@@ -1,0 +1,38 @@
+[versions]
+kotlin = "2.3.21"
+# `kensa` pins the kensa-core / kensa-* runtime libraries on the test classpath.
+# `kensaPlugin` pins the build plugin. Independent since plugin v0.9.0 — see
+# https://kensa.dev/docs/build-plugins/gradle-plugin#kensa-core-compatibility
+kensa = "0.8.1"
+kensaPlugin = "0.9.1"
+http4k = "6.23.1.0"
+jackson = "2.21.0"
+kotest = "6.1.6"
+# kensa-framework-testng was built against this TestNG version
+testng = "7.10.2"
+
+[libraries]
+kensa-testng = { module = "dev.kensa:kensa-framework-testng", version.ref = "kensa" }
+kensa-kotest = { module = "dev.kensa:kensa-assertions-kotest", version.ref = "kensa" }
+kensa-kotest-test-support = { module = "dev.kensa:kensa-kotest-test-support", version.ref = "kensa" }
+kensa-kotest-test-support-xml = { module = "dev.kensa:kensa-kotest-test-support-xml", version.ref = "kensa" }
+kensa-kotest-test-support-json = { module = "dev.kensa:kensa-kotest-test-support-json", version.ref = "kensa" }
+kensa-hamcrest = { module = "dev.kensa:kensa-assertions-hamcrest", version.ref = "kensa" }
+
+testng = { module = "org.testng:testng", version.ref = "testng" }
+
+hamcrest = { module = "org.hamcrest:hamcrest", version = "3.0" }
+
+http4k-core = { module = "org.http4k:http4k-core", version.ref = "http4k" }
+http4k-jackson = { module = "org.http4k:http4k-format-jackson", version.ref = "http4k" }
+http4k-okhttp = { module = "org.http4k:http4k-client-okhttp", version.ref = "http4k" }
+
+jackson-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson" }
+jackson-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310", version.ref = "jackson" }
+
+kotest-bom = { module = "io.kotest:kotest-bom", version.ref = "kotest" }
+kotest-assertions = { module = "io.kotest:kotest-assertions-core-jvm" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kensa-gradle = { id = "dev.kensa.gradle-plugin", version.ref = "kensaPlugin" }
