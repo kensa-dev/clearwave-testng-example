@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "kensaVersion": "0.8.1",
+  "kensaVersion": "0.8.10",
   "sources": [
     { "id": "test", "title": "Unit & Integration Tests", "url": "sources/test" }
   ]
