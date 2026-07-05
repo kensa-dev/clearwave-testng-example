@@ -1,10 +1,10 @@
 [versions]
-kotlin = "2.3.21"
+kotlin = "2.4.0"
 # `kensa` pins the kensa-core / kensa-* runtime libraries on the test classpath.
 # `kensaPlugin` pins the build plugin. Independent since plugin v0.9.0 — see
 # https://kensa.dev/docs/build-plugins/gradle-plugin#kensa-core-compatibility
-kensa = "0.8.1"
-kensaPlugin = "0.9.1"
+kensa = "0.8.11"
+kensaPlugin = "0.9.8"
 http4k = "6.23.1.0"
 jackson = "2.21.0"
 kotest = "6.1.6"
