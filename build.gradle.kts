@@ -4,6 +4,7 @@ plugins {
 }
 
 kensa {
+    kensaCoreVersion = libs.versions.kensa.get()
     sourceSets = setOf("test")
     site = true
     sourceTitles.put("test", "Unit & Integration Tests")
