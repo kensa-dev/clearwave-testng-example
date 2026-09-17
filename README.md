@@ -20,16 +20,16 @@ Tests are written using the Kensa Given-When-Then DSL with [http4k](https://http
 ## Running locally
 
 ```bash
-./gradlew test
+./gradlew test assembleKensaSite
 ```
 
 Runs the http4k-driven `FeasibilityServiceTest` and `OrderServiceTest` (plus the field DSL example and the
-two Java equivalents). The report is written to `build/kensa-output`.
+two Java equivalents). `assembleKensaSite` gathers the report into `build/kensa-site`.
 
 To open the report:
 
 ```bash
-kensa --dir build/kensa-output
+kensa --dir build/kensa-site
 ```
 
 ## TestNG integration
