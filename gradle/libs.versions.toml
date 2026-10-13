@@ -3,7 +3,7 @@ kotlin = "2.4.21"
 # `kensa` pins the kensa-core / kensa-* runtime libraries on the test classpath.
 # `kensaPlugin` pins the build plugin. Independent since plugin v0.9.0 — see
 # https://kensa.dev/docs/build-plugins/gradle-plugin#kensa-core-compatibility
-kensa = "1.0.0"
+kensa = "1.0.1"
 kensaPlugin = "1.0.0"
 http4k = "6.23.1.0"
 jackson = "2.21.0"
